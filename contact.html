@@ -68,9 +68,9 @@
       <option value="York"></option>
       <option value="Oshawa"></option>
     </datalist></div>
-    <div class="element"><label>Postal Code: <br><input type="text" required name="postal_code" class="px"></label></div><br><br>
-    <div class="element"><label>Phone Number:<br> <input type="number" required name="phone_number" class="px"></label></div><br>
-    <div style="margin-top: 10px; margin-left: -30px;" class="element"><label>Would you like to be phoned?<input type="checkbox" required name="callQuestionMark"></label></div><br>
+    <div class="element"><label>Postal Code: <br><input type="text" pattern="^([A-Za-z]\d[A-Za-z][-]?\d[A-Za-z]\d)" required name="postal_code" class="px"></label></div><br><br>
+    <div class="element"><label>Phone Number:<br> <input type="number" pattern="^\d{3}-\d{3}-\d{4}$" required name="phone_number" class="px"></label></div><br>
+    <div style="margin-top: 10px; margin-left: -30px;" class="element"><label>Would you like to be phoned?<input type="checkbox" name="callQuestionMark"></label></div><br>
     
 
     <div style="margin-left: 50px; margin-top: 3px;">
@@ -79,7 +79,7 @@
       <p><label> <input type=radio name=phone onclick="if(this.checked){notMyFunction()}"> Comment </label></p>
     <p><label> <input id="order_prob" type=radio name=phone  onclick="if(this.checked){myFunction()}"> Order Problem </label></p>
     </div>
-    <div id="order_num" style="margin-left: 53px;" class="element"><label>Enter Order Number:<br> <input type="number" name="order_number" class="px"></label></div><br>
+    <div id="order_num" style="margin-left: 53px;" class="element"><label>Enter Order Number:<br> <input type="number" required name="order_number" class="px"></label></div><br>
     
     <div style="margin-left: 53px;"><p>Message:</p><textarea name="message" style="width: 300px; height: 150px;;"></textarea></div>
     <div style="display: none;"><input name="myName" value="Ritik Bheda (169174182)"></div>
