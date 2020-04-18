@@ -210,7 +210,7 @@ li{
         display: inline;
         position: fixed;
         top: 80%;
-        left: 80%;
+        left: 50%;
         z-index:999;
     }
 
